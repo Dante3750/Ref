@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+                                             xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:tools="http://schemas.android.com/tools"
+                                             android:layout_width="match_parent"
+                                             android:background="@drawable/bg"
+
+                                             android:layout_height="match_parent"
+                                             tools:context=".activity.MyReferral"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <include
+            android:id="@+id/toolbar_notification"
+            layout="@layout/toolbar" />
+
+
+
+
+    <android.support.v7.widget.RecyclerView
+            android:background="@color/recyclerColor"
+            android:id="@+id/rv_notification"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+           app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar_notification"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintVertical_bias="0.0"
+
+    >
+
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>

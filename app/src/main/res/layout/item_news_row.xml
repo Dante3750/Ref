@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+
+                                    xmlns:app="http://schemas.android.com/tools"
+                                    android:layout_width="match_parent"
+                                    card_view:cardCornerRadius="5dp"
+                                    card_view:cardBackgroundColor="@color/white"
+                                    card_view:cardUseCompatPadding="true"
+                                    card_view:cardElevation="0dp"
+                                    android:backgroundTint="@color/white"
+                                    android:scrollbars="none"
+                                    card_view:cardPreventCornerOverlap="true"
+                                    android:layout_height="wrap_content" app:ignore="NamespaceTypo">
+
+
+    <LinearLayout
+            android:padding="10dp"
+            android:weightSum="1"
+            android:orientation="horizontal"
+            android:layout_width="match_parent" android:layout_height="wrap_content">
+
+
+    <LinearLayout
+            android:layout_weight="0.2"
+            android:orientation="vertical"
+            android:layout_width="match_parent" android:layout_height="wrap_content">
+
+        <TextView
+                android:layout_marginLeft="10dp"
+                  android:text="hello,how are you ?"
+                  android:textStyle="bold"
+                  android:textColor="@android:color/black"
+                  android:textSize="18dp"
+                  android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:id="@+id/tv_news"/>
+
+
+
+        <TextView android:layout_marginLeft="10dp"
+                  android:drawablePadding="15dp"
+                  android:drawableLeft="@drawable/date_icon_myreferral"
+                  android:text="11-03-2019"
+                  android:textColor="@android:color/black"
+                  android:textSize="18dp"
+                  android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:id="@+id/tv_news_date"/>
+
+
+
+    </LinearLayout>
+
+
+        <LinearLayout
+                android:scaleType="fitXY"
+                android:adjustViewBounds="true"
+                android:layout_weight="0.79"
+                android:orientation="vertical"
+                android:layout_width="match_parent" android:layout_height="match_parent">
+
+            <ImageView    android:id="@+id/iv_news_image" android:layout_width="match_parent" android:layout_height="match_parent">
+
+            </ImageView>
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+
+
+</android.support.v7.widget.CardView>

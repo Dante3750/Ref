@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools"
+          package="com.globals.netconnect.netconnect">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.WRITE_CONTACTS"/>
+
+    <application
+            android:name="com.globals.netconnect.netconnect.app.AppController"
+            android:allowBackup="true"
+            android:icon="@mipmap/ic_launcher"
+            android:label="@string/app_name"
+            android:roundIcon="@mipmap/ic_launcher_round"
+            android:theme="@style/AppTheme"
+            android:usesCleartextTraffic="true" tools:replace="android:appComponentFactory">
+        <activity
+                android:name="com.globals.netconnect.netconnect.activity.SplashActivity"
+                android:screenOrientation="portrait"
+                android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <service android:name="com.globals.netconnect.netconnect.notification.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <service android:name="com.globals.netconnect.netconnect.notification.MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
+
+        <activity
+                android:name="com.globals.netconnect.netconnect.activity.MainActivity"
+                android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        </activity>
+
+        <activity
+                android:name="com.globals.netconnect.netconnect.activity.HomeActivity"
+                android:label="@string/title_activity_test"
+                android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        </activity>
+        <activity
+                android:name="com.globals.netconnect.netconnect.activity.UpdateActivity"
+                android:label="Update Details"
+                android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        </activity>
+        <activity
+                android:name="com.globals.netconnect.netconnect.activity.MyReferral"
+                android:label="My Referral"
+                android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        </activity>
+        <activity
+                android:name="com.globals.netconnect.netconnect.activity.MyRewards"
+                android:label="My Rewards"
+                android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        </activity>
+        <activity
+                android:name="com.globals.netconnect.netconnect.activity.Support"
+                android:label="Support"
+                android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        </activity>
+        <activity
+                android:name="com.globals.netconnect.netconnect.activity.LatestNews"
+                android:label="Latest News"
+                android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        </activity>
+        <activity
+                android:label="Notifications"
+                android:name="com.globals.netconnect.netconnect.activity.Notification"
+                android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        </activity>
+        <activity
+                android:name="com.globals.netconnect.netconnect.activity.JobDescriptionActivity"
+                android:label="Job Description"
+                android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        </activity>
+        <activity
+                android:name="com.globals.netconnect.netconnect.activity.SubmitResume"
+                android:label="Submit Resume"
+                android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        </activity>
+        <activity
+                android:name="com.globals.netconnect.netconnect.activity.WebViewNews"
+                android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        </activity>
+
+    </application>
+
+</manifest>

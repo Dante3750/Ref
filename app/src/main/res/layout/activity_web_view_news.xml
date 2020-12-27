@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        android:orientation="vertical"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg"
+        tools:context=".activity.Support" xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <include
+            android:id="@+id/toolbar_webview"
+            layout="@layout/toolbar" />
+
+
+    <FrameLayout
+            android:focusableInTouchMode="true"
+            android:focusable="true"
+            android:background="@color/dimwhite"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout3" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.0">
+
+
+
+
+        <LinearLayout android:orientation="vertical"
+                      android:layout_width="match_parent"
+                      android:layout_height="match_parent">
+
+        <ImageView
+                android:layout_marginTop="5dp"
+                android:scaleType="fitXY"
+                android:adjustViewBounds="true"
+                android:id="@+id/iv_imageNews" android:layout_width="match_parent"
+                android:layout_height="180dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="@+id/toolbar_news"
+                 android:layout_marginStart="10dp" android:layout_marginEnd="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.466" app:layout_constraintVertical_bias="0.0"/>
+
+
+
+
+
+
+        <WebView android:layout_marginTop="20dp" android:scrollbars="none" android:id="@+id/webView" android:layout_width="match_parent" android:layout_height="wrap_content">
+
+
+
+        </WebView>
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </FrameLayout>
+
+</LinearLayout>

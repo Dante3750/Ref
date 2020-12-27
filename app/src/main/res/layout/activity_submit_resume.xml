@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:background="@drawable/bg"
+        tools:context=".activity.JobDescriptionActivity">
+
+    <include
+
+            android:id="@+id/toolbar_submit"
+            layout="@layout/toolbar" />
+
+
+
+    <LinearLayout
+            android:background="@drawable/bg"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="40dp" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar_submit"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintVertical_bias="0.0" android:id="@+id/linearLayout3">
+    </LinearLayout>
+    <LinearLayout
+
+
+            android:layout_width="match_parent"
+            android:layout_height="638dp" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout3" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.0">
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+    <FrameLayout
+            android:background="@color/recyclerColor"
+            android:layout_width="match_parent"
+            android:layout_height="1500dp" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout3" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.0">
+
+    </FrameLayout>
+
+
+
+
+
+
+
+
+
+
+    <LinearLayout
+
+            android:background="@color/dimwhite"
+            android:focusableInTouchMode="true"
+            android:focusable="true"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="1500dp" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout3" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.0">
+
+
+        <LinearLayout
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent" android:layout_height="wrap_content">
+
+            <TextView
+                    android:textSize="14dp"
+                    android:id="@+id/tvFirstName"
+                    android:text="First Name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            <EditText
+                    android:paddingLeft="-1dp"
+                    android:layout_marginLeft="2dp"
+                    android:background="@drawable/et_bg_selector"
+                    android:textCursorDrawable="@null"
+                    android:id="@+id/et_first_name"
+                    android:singleLine="true"
+                    android:maxLines="1"
+                    android:textColor="@color/dimBlack"
+                    android:inputType="text"
+                    android:textSize="15dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent" android:layout_height="wrap_content">
+
+            <TextView
+                    android:id="@+id/tvMiddleName"
+                    android:textSize="14dp"
+                    android:text="Middle Name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            <EditText
+                    android:paddingLeft="-1dp"
+                    android:layout_marginLeft="2dp"
+                    android:background="@drawable/et_bg_selector"
+                    android:textCursorDrawable="@null"
+                    android:id="@+id/et_middle_name"
+                    android:singleLine="true"
+                    android:maxLines="1"
+                    android:textColor="@color/dimBlack"
+                    android:inputType="text"
+                    android:textSize="15dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_marginTop="5dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent" android:layout_height="wrap_content">
+
+        <TextView
+                android:id="@+id/tvLastName"
+                android:textSize="14dp"
+                android:text="Last Name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        <EditText
+                android:paddingLeft="-1dp"
+                android:layout_marginLeft="2dp"
+                android:background="@drawable/et_bg_selector"
+                android:textCursorDrawable="@null"
+                android:id="@+id/et_last_name"
+                android:singleLine="true"
+                android:maxLines="1"
+                android:textColor="@color/dimBlack"
+                android:inputType="text"
+                android:textSize="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+        <LinearLayout
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent" android:layout_height="wrap_content">
+
+            <TextView
+                    android:id="@+id/tvMobile"
+                    android:textSize="14dp"
+                    android:text="Mobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            <EditText
+                    android:paddingLeft="-1dp"
+                    android:layout_marginLeft="2dp"
+                    android:background="@drawable/et_bg_selector"
+                    android:textCursorDrawable="@null"
+                    android:maxLength="10"
+                    android:id="@+id/et_mobile"
+                    android:singleLine="true"
+                    android:maxLines="1"
+                    android:textColor="@color/dimBlack"
+                    android:inputType="number"
+                    android:textSize="15dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent" android:layout_height="wrap_content">
+
+            <TextView
+                    android:id="@+id/tvEmail"
+                    android:textSize="14dp"
+                    android:text="Email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            <EditText
+                    android:paddingLeft="-1dp"
+                    android:layout_marginLeft="2dp"
+                    android:background="@drawable/et_bg_selector"
+                    android:textCursorDrawable="@null"
+                    android:id="@+id/et_email"
+                    android:singleLine="true"
+                    android:maxLines="1"
+                    android:textColor="@color/dimBlack"
+                    android:inputType="textEmailAddress"
+                    android:textSize="15dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent" android:layout_height="wrap_content">
+
+            <TextView
+                    android:id="@+id/tvUpload"
+                    android:textSize="14dp"
+                    android:text="Upload Resume"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+
+            <LinearLayout           android:layout_marginTop="10dp" android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+
+                <TextView
+                        android:gravity="center"
+                        android:textColor="@android:color/black"
+                        android:background="@drawable/submit_resume"
+                        android:id="@+id/upload"
+                        android:textSize="15dp"
+                        android:text="Upload Resume"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                <TextView
+                        android:layout_marginLeft="24dp"
+                        android:gravity="center"
+                        android:id="@+id/tv_upload_text"
+                        android:textSize="15dp"
+                        android:text="No File Choosen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+
+
+            </LinearLayout>
+
+
+
+
+
+
+
+        </LinearLayout>
+
+        <Button
+                android:layout_marginBottom="25dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="23dp"
+                android:layout_marginRight="23dp"
+                android:textColor="@color/white"
+                android:textSize="18dp"
+                android:id="@+id/bt_submit"
+                android:background="@drawable/login_bt_gradient"
+                android:layout_width="match_parent" android:layout_height="43dp" android:text="SUBMIT"/>
+
+
+    </LinearLayout>
+
+
+    <com.globals.netconnect.netconnect.helper.GradientTextView
+            android:text="+ FROM CONTACT"
+            android:gravity="center"
+            android:layout_gravity="right"
+            android:id="@+id/tv_contact"
+            android:textSize="15sp"
+            android:padding="10dp"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="@+id/toolbar_submit"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.105"
+            android:background="@drawable/submit_resume"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_marginStart="236dp"/>
+
+
+
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#636060</color>
+    <color name="colorPrimaryDark">#464343</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="white">#ffffff</color>
+    <color name="blue">#006fff</color>
+    <color name="orange">#f5562a</color>
+    <color name="dimBlack">#000000</color>
+
+    <color name="tvColor">#D0D0D0</color>
+    <color name="red">#F45C54</color>
+    <color name="forgotColor">#969696</color>
+    <color name="recyclerColor">#d2d2d2</color>
+    <color name="cardTextColor">#334F5D</color>
+    <color name="borderColor">#F1F1F1</color>
+    <color name="statusbar">#f9724d</color>
+    <color name="cardColor">#FC5375</color>
+    <color name="CardHired">#00CFA6</color>
+
+    <color name="trewardsColor">#5299B1</color>
+    <color name="prewardsColor">#F76B55</color>
+    <color name="cvTextColor">#6F6F6F</color>
+
+    <color name="jobTextColor">#334F5D</color>
+
+    <color name="jobdimcolor">#9B9B9B</color>
+    <color name="submitActivity">#E5E5E5</color>
+
+    <color name="dimwhite">#fdfdfd</color>
+
+    <color name="first">#0C6FE3</color>
+    <color name="second">#129BFF</color>
+
+    <color name="faq">#F9645E</color>
+
+
+    <color name="black">#000000</color>
+
+    <color name="cardColorNot">#B86776</color>
+
+</resources>

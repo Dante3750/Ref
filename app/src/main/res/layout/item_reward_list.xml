@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+
+                                    xmlns:app="http://schemas.android.com/tools"
+                                    android:layout_width="match_parent"
+                                    card_view:cardCornerRadius="5dp"
+                                    card_view:cardUseCompatPadding="true"
+                                    card_view:cardElevation="0dp"
+
+                                    android:scrollbars="none"
+                                    card_view:cardPreventCornerOverlap="true"
+                                    android:layout_height="wrap_content" app:ignore="NamespaceTypo">
+
+    <LinearLayout
+            android:id="@+id/ll_rewards"
+            android:padding="20dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent" android:layout_height="wrap_content">
+
+
+        <LinearLayout
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_width="match_parent" android:layout_height="wrap_content">
+
+            <TextView android:layout_marginLeft="10dp"
+                      android:text="himanshu"
+                      android:textStyle="bold"
+                      android:textSize="18dp"
+                      android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:id="@+id/tv_name" android:layout_weight="0.5"/>
+            <TextView
+
+                    android:gravity="right"
+                    android:textColor="@color/cvTextColor"
+                    android:text="\u20B9 2800"
+                    android:layout_marginRight="20dp"
+                    android:textSize="28dp"
+                    android:id="@+id/tv_rewards"
+                    android:layout_weight="0.5"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent" android:layout_height="wrap_content">
+
+            <TextView android:layout_marginLeft="10dp"
+                      android:text="Redemption Date : "
+                      android:layout_gravity="center"
+                      android:textStyle="bold"
+                      android:textColor="#979797"
+                      android:textSize="10dp"
+                      android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:id="@+id/tv_red_date"/>
+            <TextView
+
+                    android:layout_gravity="center"
+                    android:text=" 11 / 12 / 2018"
+                    android:layout_marginRight="20dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="14dp"
+                    android:id="@+id/tv_date"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <SeekBar
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="bottom"
+            android:clickable="false"
+            android:id="@+id/seekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxHeight="15dp"
+            android:minHeight="15dp"
+            android:max="90"/>
+
+
+</android.support.v7.widget.CardView>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:weightSum="1"
+              android:orientation="vertical"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+
+              android:layout_height="match_parent"
+              android:elevation="4dp"
+              tools:context=".fragment.MainFragment" android:id="@+id/constraintsLayout"
+              xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <android.support.v4.view.ViewPager android:id="@+id/view_pager"
+                                       android:layout_gravity="center"
+                                       android:background="@color/white"
+                                       android:layout_weight="0.4"
+
+
+            android:layout_width="match_parent"
+                                       android:layout_height="match_parent">
+    </android.support.v4.view.ViewPager>
+
+    <android.support.design.widget.TabLayout
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:id="@+id/tabDots"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            app:tabBackground="@drawable/tab_seleted"
+            app:tabGravity="center"
+            app:tabIndicatorHeight="0dp"/>
+
+    <LinearLayout    android:layout_marginRight="23dp"
+                     android:layout_weight="0.6"
+                     android:gravity="center"
+                     android:layout_marginLeft="23dp" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+
+        <Button
+                android:textColor="@color/statusbar"
+                android:textSize="18dp"
+                android:id="@+id/signup"
+                android:background="@drawable/sign_bt_gradient"
+                android:layout_width="match_parent" android:layout_height="43dp" android:text="SIGN UP"/>
+
+        <Button
+                android:layout_marginTop="15dp"
+                android:textColor="@color/white"
+                android:textSize="18dp"
+                android:id="@+id/login"
+                android:background="@drawable/login_bt_gradient"
+                android:layout_width="match_parent" android:layout_height="43dp" android:text="LOGIN"/>
+
+
+        <TextView
+                android:textColor="@color/dimwhite"
+                android:textSize="14dp"
+                android:layout_marginTop="25dp"
+                android:gravity="center"
+                android:text="@string/forgot_pass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/tv_forgot_pass"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

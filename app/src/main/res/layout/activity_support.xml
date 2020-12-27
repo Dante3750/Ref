@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        android:orientation="vertical"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg"
+        tools:context=".activity.Support" xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <include
+            android:id="@+id/toolbar_update"
+            layout="@layout/toolbar" />
+
+    <FrameLayout
+            android:focusableInTouchMode="true"
+            android:focusable="true"
+            android:background="@color/dimwhite"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout3" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.0">
+
+
+
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+
+
+
+
+
+        <LinearLayout
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent" android:layout_height="wrap_content">
+
+            <TextView
+                    android:textSize="14dp"
+                    android:id="@+id/tvSubject"
+                    android:text="Subject"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            <EditText
+                    android:paddingLeft="-1dp"
+                    android:layout_marginLeft="2dp"
+                    android:background="@drawable/et_bg_selector"
+                    android:textCursorDrawable="@null"
+                    android:id="@+id/et_subject"
+                    android:singleLine="true"
+                    android:maxLines="1"
+                    android:textColor="@color/dimBlack"
+                    android:inputType="text"
+                    android:textSize="15dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+
+            <LinearLayout
+                    android:layout_marginTop="25dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent" android:layout_height="wrap_content">
+
+
+
+                <TextView
+                        android:textSize="14dp"
+                        android:id="@+id/tvQuery"
+                        android:text="Add Your Query"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                <EditText
+                        android:paddingLeft="-1dp"
+                        android:layout_marginLeft="2dp"
+                        android:background="@drawable/et_bg_selector"
+                        android:textCursorDrawable="@null"
+                        android:id="@+id/et_query"
+                        android:maxLines="5"
+                        android:singleLine="false"
+                        android:textColor="@color/dimBlack"
+                        android:inputType="textMultiLine"
+                        android:textSize="15dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                    android:layout_marginTop="25dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent" android:layout_height="wrap_content">
+
+
+                <Button
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginRight="3dp"
+                        android:textColor="@color/white"
+                        android:textSize="18dp"
+                        android:id="@+id/bt_faq_submit"
+                        android:background="@drawable/login_bt_gradient"
+                        android:layout_width="match_parent" android:layout_height="43dp" android:text="SUBMIT"/>
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                    android:layout_marginTop="25dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent" android:layout_height="wrap_content">
+
+
+                <TextView  android:textColor="#334F5D" android:gravity="center" android:text="Frequently Asked Questions" android:textSize="24dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+
+                <ExpandableListView
+                        android:scrollbars="none"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/ExpandableListView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                </ExpandableListView>
+
+
+
+
+
+
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+    </FrameLayout>
+
+
+
+
+</LinearLayout>

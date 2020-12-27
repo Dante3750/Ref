@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools" android:id="@+id/nav_graph"
+            app:startDestination="@id/mainFragment">
+
+    <fragment android:id="@+id/mainFragment" android:name="com.globals.netconnect.netconnect.fragment.MainFragment"
+              android:label="fragment_main" tools:layout="@layout/fragment_main">
+        <action android:id="@+id/toLogin" app:destination="@id/loginFragment"/>
+        <action android:id="@+id/toSignUp" app:destination="@id/signUpFragment"/>
+        <action android:id="@+id/toForget" app:destination="@id/forgotFragment"/>
+    </fragment>
+    <fragment android:id="@+id/loginFragment" android:name="com.globals.netconnect.netconnect.fragment.LoginFragment"
+              android:label="fragment_login" tools:layout="@layout/fragment_login">
+
+    <action android:id="@+id/toForgot" app:destination="@id/forgotFragment"/>
+        <action android:id="@+id/action_loginFragment_to_homeActivity" app:destination="@id/MainActivityOther"/>
+    </fragment>
+    <fragment android:id="@+id/signUpFragment" android:name="com.globals.netconnect.netconnect.fragment.SignUpFragment"
+              android:label="fragment_sign_up" tools:layout="@layout/fragment_sign_up"/>
+    <fragment android:id="@+id/forgotFragment" android:name="com.globals.netconnect.netconnect.fragment.ForgotFragment"
+              android:label="fragment_forgot" tools:layout="@layout/fragment_forgot"/>
+    <activity android:id="@+id/MainActivityOther" android:name="com.globals.netconnect.netconnect.activity.HomeActivity" android:label="Open Job Positions">
+    </activity>
+
+
+</navigation>
